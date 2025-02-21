@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Doctor, Appointment } from '../interfaces/interfaces';
 
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:8082/v1' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://babysteps-backend-horw.onrender.com/v1' }),
   tagTypes: ['Doctors', 'Appointments', 'Slots'],
   endpoints: (builder) => ({
     getDoctors: builder.query<Doctor[], void>({

@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import { store } from '../redux/store';
 import { api } from '../services/api';
 
-const socket = io('http://localhost:3000');
+const socket = io('https://babysteps-backend-horw.onrender.com');
 
 export const useSocket = () => {
   useEffect(() => {
